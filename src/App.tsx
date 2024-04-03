@@ -62,7 +62,7 @@ function App() {
     return (
       <div className={styles.app}>
         <div className={styles.layout} style={{ textAlign: "center" }}>
-          <h1 className={styles.question}>Danke fürs Spielen!</h1>
+          <h1 className={styles.question}>{currentQuestion}</h1>
           <button
             type="button"
             className={styles.button}
@@ -110,6 +110,7 @@ function App() {
                 Welche berühmte Persönlichkeit bist du?
               </label>
               <input
+                autoComplete="off"
                 id="input"
                 className={styles.input}
                 value={person}
