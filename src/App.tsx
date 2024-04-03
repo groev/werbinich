@@ -85,23 +85,36 @@ function App() {
               {isLoading ? (
                 <div className={styles.think}>Denkt nach...</div>
               ) : (
-                <div className={styles.buttonGroup}>
-                  <button
-                    className={styles.button}
-                    type="button"
-                    onClick={() => answerQuestion("Nein")}
-                  >
-                    Nööö
-                  </button>
+                <>
+                  <div className={styles.buttonGroup}>
+                    <button
+                      className={styles.button}
+                      type="button"
+                      onClick={() => answerQuestion("Nein")}
+                    >
+                      Nööö
+                    </button>
 
-                  <button
-                    className={styles.button}
-                    type="button"
-                    onClick={() => answerQuestion("Ja")}
+                    <button
+                      className={styles.button}
+                      type="button"
+                      onClick={() => answerQuestion("Ja")}
+                    >
+                      Jupp
+                    </button>
+                  </div>
+                  <div
+                    style={{
+                      marginTop: "1rem",
+                      fontSize: "1rem",
+                      textDecoration: "underline",
+                    }}
                   >
-                    Jupp
-                  </button>
-                </div>
+                    <div onClick={() => answerQuestion("Ich weiß nicht")}>
+                      Ich weiß nicht
+                    </div>
+                  </div>
+                </>
               )}
             </div>
           ) : (
