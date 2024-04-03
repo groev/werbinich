@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&family=Luckiest+Guy&display=swap");
 body {
   margin: 0;
   padding: 0;
   background: #333;
-  font-size: 20px;
-  font-family: "Arial", sans-serif;
+  font-size: 25px;
+  font-family: "Gluten", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
